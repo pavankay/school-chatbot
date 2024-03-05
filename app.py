@@ -32,7 +32,7 @@ def post_message():
     # Return the message as JSON
     return response.content
 
-@app.route('/chat-completion', methods=['GET'])
+@app.route('/test', methods=['GET'])
 def chat_completion():
     # Simulated chat completion object as per OpenAI documentation
     chat_completion_object = {
@@ -64,7 +64,7 @@ def chat_completion():
     }
 
     # Return the chat completion object as a JSON response
-    return jsonify(chat_completion_object.choices)
+    return jsonify(chat_completion_object)
 
 
 if __name__ == '__main__':
