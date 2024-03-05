@@ -6,7 +6,7 @@ import os
 #How to set environment variables in Windows in PS:
 #Make sure to run the following command in the SAME terminal before running the app:
 # $env:OPENAI_API_KEY="xyzs"
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", "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"))
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 app = Flask(__name__)
 
 
